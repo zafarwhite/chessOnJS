@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson5 chess</title>
+  <link rel="stylesheet" type="text/css" href="chess.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1 align="center">
+    <img src="https://images.vector-images.com/clp/183659/clp196969.jpg"/>
+    <p class="chesstable">
+      CHESS TABLE
+      <span class="author">by Zafar</span>
+    </p>
+    <table align="center" border="1" class="chess">
+      <tr class="a odd">
+        <td><i draggable="true" data-color="black" data-figure="rook" id="rookBlack1" class="figure fa fa-chess-rook"></i></td>
+        <td><i draggable="true" data-color="black" data-figure="knight" id="knightBlack1" class="figure fa fa-chess-knight"></i></td>
+        <td><i draggable="true" data-color="black" data-figure="bishop" id="bishopBlack1" class="figure fa fa-chess-bishop"></i></td>
+        <td><i draggable="true" data-color="black" data-figure="queen" id="gueenBlack" class="figure fa fa-chess-queen"></i></td>
+        <td><i draggable="true" data-color="black" data-figure="king" id="gueenBlack" class="figure fa fa-chess-king"></i></td>
+        <td><i draggable="true" data-color="black" data-figure="bishop" id="bishopBlack2" class="figure fa fa-chess-bishop"></i></td>
+        <td><i draggable="true" data-color="black" data-figure="knight" id="knightBlack2" class="figure fa fa-chess-knight"></i></td>
+        <td><i draggable="true" data-color="black" data-figure="rook" id="rookBlack2" class="figure fa fa-chess-rook"></i></td>
+      </tr>
+      <tr class="b even">
+        <td><i draggable="true" data-color="black" data-figure="pawn" id="pawnBlack" class="figure fa fa-chess-pawn"></td>
+        <td><i draggable="true" data-color="black" data-figure="pawn" id="pawnBlack1" class="figure fa fa-chess-pawn"></td>
+        <td><i draggable="true" data-color="black" data-figure="pawn" id="pawnBlack2" class="figure fa fa-chess-pawn"></td>
+        <td><i draggable="true" data-color="black" data-figure="pawn" id="pawnBlack3" class="figure fa fa-chess-pawn"></td>
+        <td><i draggable="true" data-color="black" data-figure="pawn" id="pawnBlack4" class="figure fa fa-chess-pawn"></td>
+        <td><i draggable="true" data-color="black" data-figure="pawn" id="pawnBlack5" class="figure fa fa-chess-pawn"></td>
+        <td><i draggable="true" data-color="black" data-figure="pawn" id="pawnBlack6" class="figure fa fa-chess-pawn"></td>
+        <td><i draggable="true" data-color="black" data-figure="pawn" id="pawnBlack7" class="figure fa fa-chess-pawn"></td>
+      </tr>
+      <tr class="c odd">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="d even">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="e odd">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="f even">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="g odd">
+        <td><i draggable="true" data-color="white" data-figure="pawn" id="pawnWhite1" class="figure white fa fa-chess-pawn"></td>
+        <td><i draggable="true" data-color="white" data-figure="pawn" id="pawnWhite2" class="figure white fa fa-chess-pawn"></td>
+        <td><i draggable="true" data-color="white" data-figure="pawn" id="pawnWhite3" class="figure white fa fa-chess-pawn"></td>
+        <td><i draggable="true" data-color="white" data-figure="pawn" id="pawnWhite4" class="figure white fa fa-chess-pawn"></td>
+        <td><i draggable="true" data-color="white" data-figure="pawn" id="pawnWhite5" class="figure white fa fa-chess-pawn"></td>
+        <td><i draggable="true" data-color="white" data-figure="pawn" id="pawnWhite6" class="figure white fa fa-chess-pawn"></td>
+        <td><i draggable="true" data-color="white" data-figure="pawn" id="pawnWhite7" class="figure white fa fa-chess-pawn"></td>
+        <td><i draggable="true" data-color="white" data-figure="pawn" id="pawnWhite8" class="figure white fa fa-chess-pawn"></td>
+      </tr>
+      </tr>
+      <tr class="h even">
+        <td><i draggable="true" data-color="white" id="rookWhite1" class="white figure fa fa-chess-rook"></i></td>
+        <td><i draggable="true" data-color="white" id="knightWhite1" class="white figure fa fa-chess-knight"></i></td>
+        <td><i draggable="true" data-color="white" id="bishopWhite1" class="white figure fa fa-chess-bishop"></i></td>
+        <td><i draggable="true" data-color="white" id="gueenWhite" class="white figure fa fa-chess-queen"></i></td>
+        <td><i draggable="true" data-color="white" id="kingWhite" class="white figure fa fa-chess-king"></i></td>
+        <td><i draggable="true" data-color="white" id="bishopWhite2" class="white figure fa fa-chess-bishop"></i></td>
+        <td><i draggable="true" data-color="white" id="knightWhite2" class="white figure fa fa-chess-knight"></i></td>
+        <td><i draggable="true" data-color="white" id="rookWhite2" class="white figure fa fa-chess-rook"></i></td>
+      </tr>
+    </table>
+  </h1>
+  <script src ="index.js"></script>
+</body>
+
+</html>

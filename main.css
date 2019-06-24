@@ -1,0 +1,50 @@
+table{
+	background-color: #58362D;
+   }
+   .chess td {
+	   border: 1px solid;
+	   width: 70px;
+	   height: 70px;
+   }
+   .odd td:nth-child(odd) {
+	   background-color: #F9C993;	
+   }
+   
+   .even td:nth-child(even) {
+	   background-color: #F9C993;	
+   }
+   
+   .fa {
+	 color: black;
+   }
+   
+   .white {
+	 color: #fff;
+   }
+   
+   .author{
+	   font-style: italic;
+	   color: blue;
+   }
+   
+   table :hover {
+		color: blue;
+   }
+   
+   .chesstable {
+	   color:black;
+	   font-style: bolder;
+   }
+   
+   h1{
+	   background-color: yellow;
+   }
+   
+   img{
+	   width:200px;
+	   height:200px;
+   }
+   
+   .over {
+	 border-color: green !important;
+   }
